@@ -420,12 +420,13 @@ autoPitch Sound_to_Pitch_any (Sound me,
 			for (integer i = 1; i <= my nx; i ++) {
 				double value = fabs (my z [ichan] [i] - mean);
 
-				if (maximums.size() == 0 || value >= *maximums.begin())
+				if (maximums.size() == 0 || value >= *maximums.begin()) {
 					if (maximums.size() == nmaximums) {
 						maximums.erase(maximums.begin());
 					}
 					maximums.insert(value);
 					globalPeak = value;
+				}
 			}
 		}
 		if (maximums.size() == 0)
