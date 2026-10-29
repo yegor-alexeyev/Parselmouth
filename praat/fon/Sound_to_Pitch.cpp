@@ -431,7 +431,7 @@ autoPitch Sound_to_Pitch_any (Sound me,
 		if (maximums.size() == 0)
 			return thee;
 
-        globalPeak = *maximums.begin()
+        globalPeak = *maximums.begin();
 
 		autoVEC window, windowR;
 		if (method >= FCC_NORMAL) {   // for cross-correlation analysis
