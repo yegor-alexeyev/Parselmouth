@@ -421,7 +421,7 @@ autoPitch Sound_to_Pitch_any (Sound me,
 				double value = fabs (my z [ichan] [i] - mean);
 
 				if (maximums.size() == 0 || value >= *maximums.begin())
-					if (maxmums.size() == nmaximums) {
+					if (maximums.size() == nmaximums) {
 						maximums.erase(maximums.begin());
 					}
 					maximums.insert(value);
